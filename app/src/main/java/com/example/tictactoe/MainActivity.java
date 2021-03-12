@@ -74,25 +74,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         for (int i = 0; i < 3; i++) {  //for all 3 rows //
             if (field[i][0].equals(field[i][1])
                     && field[i][0].equals(field[i][2]) //responsible for comparing the 3 fields next to each other//
-                    && !field[i][0].equals("")) {  //to makes sure its not just 3 types of empty fields//
+                    && !field[i][0].equals("")) {  //to make sure its not just 3 types of empty fields//
                 return true;
             }
         }
         for (int i = 0; i < 3; i++) { //for all 3 collumns //
             if (field[0][i].equals(field[1][i]) //responsible for comparing the 3 fields next to each other//
                     && field[0][i].equals(field[2][i])
-                    && !field[0][i].equals("")) { //to makes sure its not just 3 types of empty fields//
+                    && !field[0][i].equals("")) { //to make sure its not just 3 types of empty fields//
                 return true;
             }
         }
         if (field[0][0].equals(field[1][1]) //Top LEFT to  Bottom RIGHT diagonal //
                 && field[0][0].equals(field[2][2]) //responsible for comparing the 3 fields next to each other//
-                && !field[0][0].equals("")) {  //to makes sure its not just 3 types of empty fields//
+                && !field[0][0].equals("")) {  //to make sure its not just 3 types of empty fields//
             return true;
         }
         if (field[0][2].equals(field[1][1]) //Top RIGHT to  Bottom LEFT diagonal //
                 && field[0][2].equals(field[2][0]) //responsible for comparing the 3 fields next to each other//
-                && !field[0][2].equals("")) { //to makes sure its not just 3 types of empty fields//
+                && !field[0][2].equals("")) { //to make sure its not just 3 types of empty fields//
             return true;
         }
         return false;
